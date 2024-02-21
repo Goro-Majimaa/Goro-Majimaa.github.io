@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fortune - Christopher's Website</title>
+    </head>
+    <script>
+        function Fortune() {
+            let first = ["Only you","Your family","Your friends","Your friends and family","Your dog"];
+            let second = ["can see","can be","will be","will see","have seen","could've been"];
+            let third = ["there","you","them"];
+            let fourtho = ["if it wasn't for","without","with","but needs"];
+            let fiftho = ["time.","space.","money.","no distractions.","Lebron James."]
+
+            //if Math.floor(Math.random() * 2) == 1 {
+                let fortune = first[Math.floor(Math.random() * first.length)] + " " + second[Math.floor(Math.random() * second.length)] + " " + third[Math.floor(Math.random() * third.length)] + " " + fourtho[Math.floor(Math.random() * fourtho.length)] + " " + fiftho[Math.floor(Math.random() * fiftho.length)];
+                alert(fortune);
+        }
+    </script>
+    <body style="background-color: black; color: white;">
+        <div class="header" style="background-color: blue; color: white;">
+            <div>
+                <a href="index.html" style = "display: inline-block; color: white;">Home</a>
+                <a href="about.html" style = "display: inline-block; color: white;">About</a>
+                <p style = "display: inline-block; color: white;">Fortune</p>
+                <p style = "display: inline-block; color: white;">Help</p>
+            </div>
+        </div>
+        <center><h1>Fortune</h1></center>
+        <button onclick="Fortune()">What's my fortune?</button>
+    </body>
+</html>
